@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     lazy var rows: [UITableViewCell] = [
@@ -38,6 +39,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        switch indexPath.row {
+        case 0:
+            let wechat = WechatViewController.initWithStoryBoard(name: "WechatViewController")
+            navigationController?.pushViewController(wechat, animated: true)
+        case 1:
+            let aliPay = AlipayViewController.initWithStoryBoard(name: "AlipayViewController")
+            navigationController?.pushViewController(aliPay, animated: true)
+        default:
+            return
+        }
     }
 
 
