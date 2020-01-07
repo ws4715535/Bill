@@ -86,12 +86,12 @@
 				5452843E23C451D900824620 /* AppDelegate.swift */,
 				5452844023C451D900824620 /* SceneDelegate.swift */,
 				5452844223C451D900824620 /* ViewController.swift */,
+				54A8608123C45C6700CF9F70 /* AlipayViewController.swift */,
+				54A8608323C45C7400CF9F70 /* WechatViewController.swift */,
 				5452844423C451D900824620 /* Main.storyboard */,
 				5452844723C451D900824620 /* Assets.xcassets */,
 				5452844923C451D900824620 /* LaunchScreen.storyboard */,
 				5452844C23C451D900824620 /* Info.plist */,
-				54A8608123C45C6700CF9F70 /* AlipayViewController.swift */,
-				54A8608323C45C7400CF9F70 /* WechatViewController.swift */,
 			);
 			path = Bill;
 			sourceTree = "<group>";

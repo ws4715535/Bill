@@ -8,16 +8,48 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    lazy var rows: [UITableViewCell] = [
+        buildCell(name: "微信支付"),
+        buildCell(name: "支付宝支付"),
+    ]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        initView()
+        
+        let tableView = UITableView(frame: view.bounds, style: .plain)
+        view.addSubview(tableView)
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.tableFooterView = UIView()
+        
+    }
+    
+    //MARK: TableView Delegate & Datasource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rows.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return rows[indexPath.row]
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
-    fileprivate func initView() {
-        view.backgroundColor = UIColor.systemGray
-    }
 
+    //MARK: private function
+    fileprivate func buildCell(name: String) -> UITableViewCell {
+        
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        cell.textLabel?.text = name
+        cell.accessoryType = .disclosureIndicator
+        
+        return cell
+    }
+    
 }
 
