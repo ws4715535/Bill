@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        initView()
     }
 
+    fileprivate func initView() {
+        view.backgroundColor = UIColor.systemGray
+    }
 
 }
 

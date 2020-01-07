@@ -14,6 +14,8 @@
 		5452844823C451D900824620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5452844723C451D900824620 /* Assets.xcassets */; };
 		5452844B23C451D900824620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5452844923C451D900824620 /* LaunchScreen.storyboard */; };
 		5452845623C451D900824620 /* BillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5452845523C451D900824620 /* BillTests.swift */; };
+		54A8608223C45C6700CF9F70 /* AlipayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8608123C45C6700CF9F70 /* AlipayViewController.swift */; };
+		54A8608423C45C7400CF9F70 /* WechatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8608323C45C7400CF9F70 /* WechatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		5452845123C451D900824620 /* BillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5452845523C451D900824620 /* BillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillTests.swift; sourceTree = "<group>"; };
 		5452845723C451D900824620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54A8608123C45C6700CF9F70 /* AlipayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlipayViewController.swift; sourceTree = "<group>"; };
+		54A8608323C45C7400CF9F70 /* WechatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				5452844723C451D900824620 /* Assets.xcassets */,
 				5452844923C451D900824620 /* LaunchScreen.storyboard */,
 				5452844C23C451D900824620 /* Info.plist */,
+				54A8608123C45C6700CF9F70 /* AlipayViewController.swift */,
+				54A8608323C45C7400CF9F70 /* WechatViewController.swift */,
 			);
 			path = Bill;
 			sourceTree = "<group>";
@@ -200,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54A8608223C45C6700CF9F70 /* AlipayViewController.swift in Sources */,
+				54A8608423C45C7400CF9F70 /* WechatViewController.swift in Sources */,
 				5452844323C451D900824620 /* ViewController.swift in Sources */,
 				5452843F23C451D900824620 /* AppDelegate.swift in Sources */,
 				5452844123C451D900824620 /* SceneDelegate.swift in Sources */,
