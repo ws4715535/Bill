@@ -19,16 +19,6 @@
 		54A8608623C4693100CF9F70 /* WechatViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A8608523C4693100CF9F70 /* WechatViewController.storyboard */; };
 		54A8608823C4697C00CF9F70 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8608723C4697C00CF9F70 /* Help.swift */; };
 		54A8608A23C46AD600CF9F70 /* AlipayViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A8608923C46AD600CF9F70 /* AlipayViewController.storyboard */; };
-		54D22D5E23C5C64B007F5B5A /* haidilao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D5D23C5C64B007F5B5A /* haidilao.jpg */; };
-		54D22D6823C5C7CF007F5B5A /* hotpot5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D5F23C5C7CE007F5B5A /* hotpot5.jpg */; };
-		54D22D6923C5C7CF007F5B5A /* hotpot3.png in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D6023C5C7CE007F5B5A /* hotpot3.png */; };
-		54D22D6A23C5C7CF007F5B5A /* hotpot4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D6123C5C7CE007F5B5A /* hotpot4.jpg */; };
-		54D22D6B23C5C7CF007F5B5A /* coolie2.png in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D6223C5C7CE007F5B5A /* coolie2.png */; };
-		54D22D6C23C5C7CF007F5B5A /* flower1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D6323C5C7CE007F5B5A /* flower1.jpg */; };
-		54D22D6D23C5C7CF007F5B5A /* hotpot2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D6423C5C7CF007F5B5A /* hotpot2.jpg */; };
-		54D22D6E23C5C7CF007F5B5A /* cookie1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D6523C5C7CF007F5B5A /* cookie1.jpg */; };
-		54D22D6F23C5C7CF007F5B5A /* hotpot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D6623C5C7CF007F5B5A /* hotpot1.jpg */; };
-		54D22D7023C5C7CF007F5B5A /* flower2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D6723C5C7CF007F5B5A /* flower2.jpg */; };
 		D1FB74221E4387F046949CD8 /* Pods_BillTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AA1CAB4F760D2034067A0D /* Pods_BillTests.framework */; };
 		F3BFA05FB0C1BB620B2984B9 /* Pods_Bill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089CD07F803C2428B0B93C1E /* Pods_Bill.framework */; };
 /* End PBXBuildFile section */
@@ -63,16 +53,6 @@
 		54A8608923C46AD600CF9F70 /* AlipayViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlipayViewController.storyboard; sourceTree = "<group>"; };
 		54D22D5923C5BA11007F5B5A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		54D22D5A23C5BA11007F5B5A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		54D22D5D23C5C64B007F5B5A /* haidilao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = haidilao.jpg; path = Bill/Assets.xcassets/BusinessIcon/haidilao.imageset/haidilao.jpg; sourceTree = SOURCE_ROOT; };
-		54D22D5F23C5C7CE007F5B5A /* hotpot5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotpot5.jpg; sourceTree = "<group>"; };
-		54D22D6023C5C7CE007F5B5A /* hotpot3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotpot3.png; sourceTree = "<group>"; };
-		54D22D6123C5C7CE007F5B5A /* hotpot4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotpot4.jpg; sourceTree = "<group>"; };
-		54D22D6223C5C7CE007F5B5A /* coolie2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coolie2.png; sourceTree = "<group>"; };
-		54D22D6323C5C7CE007F5B5A /* flower1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower1.jpg; sourceTree = "<group>"; };
-		54D22D6423C5C7CF007F5B5A /* hotpot2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotpot2.jpg; sourceTree = "<group>"; };
-		54D22D6523C5C7CF007F5B5A /* cookie1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cookie1.jpg; sourceTree = "<group>"; };
-		54D22D6623C5C7CF007F5B5A /* hotpot1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotpot1.jpg; sourceTree = "<group>"; };
-		54D22D6723C5C7CF007F5B5A /* flower2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower2.jpg; sourceTree = "<group>"; };
 		A7A7CA6E005F559DE0B05FA7 /* Pods-BillTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillTests.release.xcconfig"; path = "Target Support Files/Pods-BillTests/Pods-BillTests.release.xcconfig"; sourceTree = "<group>"; };
 		C0755B5FC6EB0500DAD3CD44 /* Pods-BillTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillTests.debug.xcconfig"; path = "Target Support Files/Pods-BillTests/Pods-BillTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4A767A5407D27D1E67FAC5F /* Pods-Bill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bill.debug.xcconfig"; path = "Target Support Files/Pods-Bill/Pods-Bill.debug.xcconfig"; sourceTree = "<group>"; };
@@ -185,16 +165,6 @@
 		54D22D5C23C5C63A007F5B5A /* logos */ = {
 			isa = PBXGroup;
 			children = (
-				54D22D6523C5C7CF007F5B5A /* cookie1.jpg */,
-				54D22D6223C5C7CE007F5B5A /* coolie2.png */,
-				54D22D6323C5C7CE007F5B5A /* flower1.jpg */,
-				54D22D6723C5C7CF007F5B5A /* flower2.jpg */,
-				54D22D6623C5C7CF007F5B5A /* hotpot1.jpg */,
-				54D22D6423C5C7CF007F5B5A /* hotpot2.jpg */,
-				54D22D6023C5C7CE007F5B5A /* hotpot3.png */,
-				54D22D6123C5C7CE007F5B5A /* hotpot4.jpg */,
-				54D22D5F23C5C7CE007F5B5A /* hotpot5.jpg */,
-				54D22D5D23C5C64B007F5B5A /* haidilao.jpg */,
 			);
 			path = logos;
 			sourceTree = "<group>";
@@ -295,21 +265,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54D22D7023C5C7CF007F5B5A /* flower2.jpg in Resources */,
-				54D22D6E23C5C7CF007F5B5A /* cookie1.jpg in Resources */,
 				5452844B23C451D900824620 /* LaunchScreen.storyboard in Resources */,
 				54A8608A23C46AD600CF9F70 /* AlipayViewController.storyboard in Resources */,
-				54D22D6D23C5C7CF007F5B5A /* hotpot2.jpg in Resources */,
-				54D22D5E23C5C64B007F5B5A /* haidilao.jpg in Resources */,
 				54A8608623C4693100CF9F70 /* WechatViewController.storyboard in Resources */,
 				5452844823C451D900824620 /* Assets.xcassets in Resources */,
-				54D22D6F23C5C7CF007F5B5A /* hotpot1.jpg in Resources */,
-				54D22D6823C5C7CF007F5B5A /* hotpot5.jpg in Resources */,
 				5452844623C451D900824620 /* Main.storyboard in Resources */,
-				54D22D6923C5C7CF007F5B5A /* hotpot3.png in Resources */,
-				54D22D6A23C5C7CF007F5B5A /* hotpot4.jpg in Resources */,
-				54D22D6C23C5C7CF007F5B5A /* flower1.jpg in Resources */,
-				54D22D6B23C5C7CF007F5B5A /* coolie2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
