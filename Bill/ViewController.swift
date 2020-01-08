@@ -25,7 +25,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
-        
     }
     
     //MARK: TableView Delegate & Datasource

@@ -15,7 +15,6 @@ class AlipayViewController: UIViewController {
 
     }
     
-
     /*
     // MARK: - Navigation
 
