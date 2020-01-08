@@ -10,16 +10,19 @@ import UIKit
 import IHKeyboardAvoiding
 
 class WechatViewController: UIViewController {
-
+    
+    @IBOutlet weak var tradeNumber: UITextField!
+    @IBOutlet weak var businessNumber: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        KeyboardAvoiding.avoidingView = view
-        
-//        navigationItem.hidesBackButton = true
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "close"), style: .done, target: self, action: #selector(popBack))
+        avoidKeyBoard()
     }
     
+    private func avoidKeyBoard() {
+        KeyboardAvoiding.avoidingView = view
+        KeyboardAvoiding.paddingForCurrentAvoidingView = -150
+    }
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
