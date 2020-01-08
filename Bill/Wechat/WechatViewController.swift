@@ -17,11 +17,16 @@ class WechatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         avoidKeyBoard()
+        setBackButton()
+    }
+    
+    private func setBackButton() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "close"), style: .plain, target: self, action: #selector(popBack))
     }
     
     private func avoidKeyBoard() {
         KeyboardAvoiding.avoidingView = view
-        KeyboardAvoiding.paddingForCurrentAvoidingView = -150
+        KeyboardAvoiding.paddingForCurrentAvoidingView = -200
     }
     
     
