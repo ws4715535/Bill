@@ -28,6 +28,8 @@
 		54D22D8023C5CB1A007F5B5A /* hotpot2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D7723C5CB1A007F5B5A /* hotpot2.jpg */; };
 		54D22D8123C5CB1A007F5B5A /* flower2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D7823C5CB1A007F5B5A /* flower2.jpg */; };
 		54D22D8223C5CB1A007F5B5A /* hotpot3.png in Resources */ = {isa = PBXBuildFile; fileRef = 54D22D7923C5CB1A007F5B5A /* hotpot3.png */; };
+		54D22D8423C5CBCF007F5B5A /* LogoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D22D8323C5CBCF007F5B5A /* LogoGallery.swift */; };
+		54D22D8723C5D6F9007F5B5A /* PathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D22D8623C5D6F9007F5B5A /* PathKit.swift */; };
 		D1FB74221E4387F046949CD8 /* Pods_BillTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AA1CAB4F760D2034067A0D /* Pods_BillTests.framework */; };
 		F3BFA05FB0C1BB620B2984B9 /* Pods_Bill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089CD07F803C2428B0B93C1E /* Pods_Bill.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +73,8 @@
 		54D22D7723C5CB1A007F5B5A /* hotpot2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotpot2.jpg; sourceTree = "<group>"; };
 		54D22D7823C5CB1A007F5B5A /* flower2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower2.jpg; sourceTree = "<group>"; };
 		54D22D7923C5CB1A007F5B5A /* hotpot3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotpot3.png; sourceTree = "<group>"; };
+		54D22D8323C5CBCF007F5B5A /* LogoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoGallery.swift; sourceTree = "<group>"; };
+		54D22D8623C5D6F9007F5B5A /* PathKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathKit.swift; sourceTree = "<group>"; };
 		A7A7CA6E005F559DE0B05FA7 /* Pods-BillTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillTests.release.xcconfig"; path = "Target Support Files/Pods-BillTests/Pods-BillTests.release.xcconfig"; sourceTree = "<group>"; };
 		C0755B5FC6EB0500DAD3CD44 /* Pods-BillTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BillTests.debug.xcconfig"; path = "Target Support Files/Pods-BillTests/Pods-BillTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4A767A5407D27D1E67FAC5F /* Pods-Bill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bill.debug.xcconfig"; path = "Target Support Files/Pods-Bill/Pods-Bill.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 		5452843D23C451D900824620 /* Bill */ = {
 			isa = PBXGroup;
 			children = (
+				54D22D8523C5D6E8007F5B5A /* utity */,
 				54D22D5B23C5C62F007F5B5A /* resource */,
 				54A8608C23C46AF200CF9F70 /* Wechat */,
 				54A8608B23C46AE700CF9F70 /* Alipay */,
@@ -159,6 +164,7 @@
 			children = (
 				54A8608123C45C6700CF9F70 /* AlipayViewController.swift */,
 				54A8608923C46AD600CF9F70 /* AlipayViewController.storyboard */,
+				54D22D8323C5CBCF007F5B5A /* LogoGallery.swift */,
 			);
 			path = Alipay;
 			sourceTree = "<group>";
@@ -194,6 +200,14 @@
 				54D22D7523C5CB1A007F5B5A /* hotpot5.jpg */,
 			);
 			path = logos;
+			sourceTree = "<group>";
+		};
+		54D22D8523C5D6E8007F5B5A /* utity */ = {
+			isa = PBXGroup;
+			children = (
+				54D22D8623C5D6F9007F5B5A /* PathKit.swift */,
+			);
+			path = utity;
 			sourceTree = "<group>";
 		};
 		E72E933E021FDC98799B0D92 /* Pods */ = {
@@ -392,6 +406,8 @@
 				54A8608823C4697C00CF9F70 /* Help.swift in Sources */,
 				5452844323C451D900824620 /* ViewController.swift in Sources */,
 				5452843F23C451D900824620 /* AppDelegate.swift in Sources */,
+				54D22D8723C5D6F9007F5B5A /* PathKit.swift in Sources */,
+				54D22D8423C5CBCF007F5B5A /* LogoGallery.swift in Sources */,
 				5452844123C451D900824620 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
