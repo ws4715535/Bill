@@ -266,6 +266,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="businessNumber" destination="Bu8-un-fn7" id="nvS-gD-zjA"/>
+                        <outlet property="logo" destination="hbv-T5-U8M" id="MPb-zL-Xb0"/>
                         <outlet property="tradeNumber" destination="AgS-6m-i0D" id="PY5-Hs-EaV"/>
                     </connections>
                 </viewController>

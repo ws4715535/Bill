@@ -7,6 +7,7 @@ target 'Bill' do
 
   # Pods for Bill	
   pod 'IHKeyboardAvoiding'
+  pod 'YPImagePicker'
 
   target 'BillTests' do
     inherit! :search_paths

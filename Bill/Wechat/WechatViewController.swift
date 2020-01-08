@@ -8,16 +8,25 @@
 
 import UIKit
 import IHKeyboardAvoiding
+import YPImagePicker
 
 class WechatViewController: UIViewController {
     
+    @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var tradeNumber: UITextField!
     @IBOutlet weak var businessNumber: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initLogo()
         avoidKeyBoard()
         setBackButton()
+        changeLogo()
+    }
+    private func initLogo() {
+        logo.isUserInteractionEnabled = true
+        logo.layer.cornerRadius = 31
+        logo.clipsToBounds = true
     }
     
     private func setBackButton() {
@@ -27,6 +36,11 @@ class WechatViewController: UIViewController {
     private func avoidKeyBoard() {
         KeyboardAvoiding.avoidingView = view
         KeyboardAvoiding.paddingForCurrentAvoidingView = -200
+    }
+    
+    private func changeLogo() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapLogo))
+        logo.addGestureRecognizer(tap)
     }
     
     
@@ -39,4 +53,44 @@ class WechatViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @objc func tapLogo() {
+        let photoSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        let photo = UIAlertAction(title: "相册", style: .default) { (action) in
+            var config = YPImagePickerConfiguration()
+            config.screens = [.library]
+            config.showsPhotoFilters = false
+            let picker = YPImagePicker(configuration: config)
+            picker.didFinishPicking { [unowned picker] items, _ in
+                if let photo = items.singlePhoto {
+                    self.logo.image = photo.image
+                }
+                picker.dismiss(animated: true, completion: nil)
+            }
+            self.present(picker, animated: true, completion: nil)
+        }
+        let camera = UIAlertAction(title: "拍照", style: .default) { (action) in
+            var config = YPImagePickerConfiguration()
+            config.screens = [.photo]
+            config.showsPhotoFilters = false
+            let picker = YPImagePicker(configuration: config)
+            picker.didFinishPicking { [unowned picker] items, _ in
+                if let photo = items.singlePhoto {
+                    self.logo.image = photo.image
+                }
+                picker.dismiss(animated: true, completion: nil)
+            }
+            self.present(picker, animated: true, completion: nil)
+        }
+        
+        let fantasy = UIAlertAction(title: "🚀", style: .default) { (action) in
+        }
+        
+        let cancle = UIAlertAction(title: "取消", style: .cancel)
+        photoSheet.addAction(photo)
+        photoSheet.addAction(camera)
+        photoSheet.addAction(fantasy)
+        photoSheet.addAction(cancle)
+        present(photoSheet, animated: true)
+        
+    }
 }
