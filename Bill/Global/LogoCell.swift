@@ -10,6 +10,8 @@ import UIKit
 
 class LogoCell: UICollectionViewCell {
 
+    @IBOutlet weak var logo: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

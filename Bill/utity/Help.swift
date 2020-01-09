@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+let ScreenWidth = UIScreen.main.bounds.size.width
+let ScreenHeight = UIScreen.main.bounds.size.height
+let logoCount = 16
 
 extension UIViewController {
     class func initWithStoryBoard(name: String) -> UIViewController {
@@ -22,7 +25,7 @@ class ImageManager {
         
     class func loadLogos() -> [UIImage] {
         var imgs = [UIImage]()
-        for i in 0...9 {
+        for i in 0...logoCount {
             if let logo = UIImage(named: "logo\(i)")  {
                 imgs.append(logo)
             }

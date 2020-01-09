@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542CD88623C6D3D80015A545 /* LogoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542CD88423C6D3D80015A545 /* LogoCell.swift */; };
+		542CD88723C6D3D80015A545 /* LogoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542CD88523C6D3D80015A545 /* LogoCell.xib */; };
 		5452843F23C451D900824620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5452843E23C451D900824620 /* AppDelegate.swift */; };
 		5452844123C451D900824620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5452844023C451D900824620 /* SceneDelegate.swift */; };
 		5452844323C451D900824620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5452844223C451D900824620 /* ViewController.swift */; };
-		5452844623C451D900824620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5452844423C451D900824620 /* Main.storyboard */; };
 		5452844823C451D900824620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5452844723C451D900824620 /* Assets.xcassets */; };
 		5452844B23C451D900824620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5452844923C451D900824620 /* LaunchScreen.storyboard */; };
 		5452845623C451D900824620 /* BillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5452845523C451D900824620 /* BillTests.swift */; };
@@ -37,11 +38,12 @@
 
 /* Begin PBXFileReference section */
 		089CD07F803C2428B0B93C1E /* Pods_Bill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		542CD88423C6D3D80015A545 /* LogoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCell.swift; sourceTree = "<group>"; };
+		542CD88523C6D3D80015A545 /* LogoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoCell.xib; sourceTree = "<group>"; };
 		5452843B23C451D900824620 /* Bill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5452843E23C451D900824620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5452844023C451D900824620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5452844223C451D900824620 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5452844523C451D900824620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5452844723C451D900824620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5452844A23C451D900824620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5452844C23C451D900824620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +55,6 @@
 		54A8608523C4693100CF9F70 /* WechatViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WechatViewController.storyboard; sourceTree = "<group>"; };
 		54A8608723C4697C00CF9F70 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
 		54A8608923C46AD600CF9F70 /* AlipayViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlipayViewController.storyboard; sourceTree = "<group>"; };
-		54D22D5923C5BA11007F5B5A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		54D22D5A23C5BA11007F5B5A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		54D22D8323C5CBCF007F5B5A /* LogoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoGallery.swift; sourceTree = "<group>"; };
 		54D22D8623C5D6F9007F5B5A /* PathKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathKit.swift; sourceTree = "<group>"; };
@@ -116,18 +117,14 @@
 		5452843D23C451D900824620 /* Bill */ = {
 			isa = PBXGroup;
 			children = (
+				54CC71F423C6CE3900780A0E /* Global */,
+				54CC71F323C6CDFF00780A0E /* Main */,
 				54D22D8523C5D6E8007F5B5A /* utity */,
 				54D22D5B23C5C62F007F5B5A /* resource */,
 				54A8608C23C46AF200CF9F70 /* Wechat */,
 				54A8608B23C46AE700CF9F70 /* Alipay */,
-				5452843E23C451D900824620 /* AppDelegate.swift */,
-				5452844023C451D900824620 /* SceneDelegate.swift */,
-				5452844223C451D900824620 /* ViewController.swift */,
-				5452844423C451D900824620 /* Main.storyboard */,
 				5452844723C451D900824620 /* Assets.xcassets */,
-				5452844923C451D900824620 /* LaunchScreen.storyboard */,
 				5452844C23C451D900824620 /* Info.plist */,
-				54A8608723C4697C00CF9F70 /* Help.swift */,
 			);
 			path = Bill;
 			sourceTree = "<group>";
@@ -146,7 +143,6 @@
 			children = (
 				54A8608123C45C6700CF9F70 /* AlipayViewController.swift */,
 				54A8608923C46AD600CF9F70 /* AlipayViewController.storyboard */,
-				54D22D8323C5CBCF007F5B5A /* LogoGallery.swift */,
 			);
 			path = Alipay;
 			sourceTree = "<group>";
@@ -158,6 +154,27 @@
 				54A8608323C45C7400CF9F70 /* WechatViewController.swift */,
 			);
 			path = Wechat;
+			sourceTree = "<group>";
+		};
+		54CC71F323C6CDFF00780A0E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5452843E23C451D900824620 /* AppDelegate.swift */,
+				5452844023C451D900824620 /* SceneDelegate.swift */,
+				5452844223C451D900824620 /* ViewController.swift */,
+				5452844923C451D900824620 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		54CC71F423C6CE3900780A0E /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				54D22D8323C5CBCF007F5B5A /* LogoGallery.swift */,
+				542CD88423C6D3D80015A545 /* LogoCell.swift */,
+				542CD88523C6D3D80015A545 /* LogoCell.xib */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 		54D22D5B23C5C62F007F5B5A /* resource */ = {
@@ -178,6 +195,7 @@
 		54D22D8523C5D6E8007F5B5A /* utity */ = {
 			isa = PBXGroup;
 			children = (
+				54A8608723C4697C00CF9F70 /* Help.swift */,
 				54D22D8623C5D6F9007F5B5A /* PathKit.swift */,
 			);
 			path = utity;
@@ -282,8 +300,8 @@
 				5452844B23C451D900824620 /* LaunchScreen.storyboard in Resources */,
 				54A8608A23C46AD600CF9F70 /* AlipayViewController.storyboard in Resources */,
 				54A8608623C4693100CF9F70 /* WechatViewController.storyboard in Resources */,
+				542CD88723C6D3D80015A545 /* LogoCell.xib in Resources */,
 				5452844823C451D900824620 /* Assets.xcassets in Resources */,
-				5452844623C451D900824620 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +391,7 @@
 				54D22D8723C5D6F9007F5B5A /* PathKit.swift in Sources */,
 				54D22D8423C5CBCF007F5B5A /* LogoGallery.swift in Sources */,
 				5452844123C451D900824620 /* SceneDelegate.swift in Sources */,
+				542CD88623C6D3D80015A545 /* LogoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,15 +414,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5452844423C451D900824620 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5452844523C451D900824620 /* Base */,
-				54D22D5923C5BA11007F5B5A /* zh-Hans */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5452844923C451D900824620 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

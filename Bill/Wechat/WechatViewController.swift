@@ -83,6 +83,9 @@ class WechatViewController: UIViewController {
         }
         
         let fantasy = UIAlertAction(title: "🚀", style: .default) { (action) in
+            let logoGallery = LogoGallery()
+            logoGallery.delegate = self
+            self.present(logoGallery, animated: true)
         }
         
         let cancle = UIAlertAction(title: "取消", style: .cancel)
@@ -92,5 +95,11 @@ class WechatViewController: UIViewController {
         photoSheet.addAction(cancle)
         present(photoSheet, animated: true)
         
+    }
+}
+
+extension WechatViewController: GalleryDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath, logo: UIImage) {
+        self.logo.image = logo
     }
 }
