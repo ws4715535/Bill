@@ -26,7 +26,7 @@ class WechatViewController: UIViewController {
     private func initLogo() {
         logo.isUserInteractionEnabled = true
         logo.layer.cornerRadius = 31
-        logo.clipsToBounds = true
+        logo.clipsToBounds = true        
     }
     
     private func setBackButton() {
@@ -85,7 +85,8 @@ class WechatViewController: UIViewController {
         let fantasy = UIAlertAction(title: "🚀", style: .default) { (action) in
             let logoGallery = LogoGallery()
             logoGallery.delegate = self
-            self.present(logoGallery, animated: true)
+            let navi = UINavigationController(rootViewController: logoGallery)
+            self.present(navi, animated: true)
         }
         
         let cancle = UIAlertAction(title: "取消", style: .cancel)

@@ -14,8 +14,14 @@ let ScreenHeight = UIScreen.main.bounds.size.height
 let logoCount = 16
 
 extension UIViewController {
-    class func initWithStoryBoard(name: String) -> UIViewController {
+    class func initStoryBoardWithInitialController(name: String) -> UIViewController {
         let sb = UIStoryboard(name: name, bundle: nil)
+        return sb.instantiateInitialViewController()!
+    }
+    
+    class func initStoryBoardWithIdentifier(name: String, identifier: String) -> UIViewController {
+        let sb = UIStoryboard(name: name, bundle: nil)
+        sb.instantiateViewController(withIdentifier: identifier)
         return sb.instantiateInitialViewController()!
     }
 }

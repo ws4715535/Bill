@@ -19,13 +19,21 @@ class LogoGallery: UIViewController {
     let itemWidth: CGFloat = ScreenWidth / 4
     
     weak var delegate:GalleryDelegate?
-    lazy var datas = ImageManager.loadLogos()
+    lazy var datas = ImageManager.loadLogos() + ImageManager.loadLogos()
     
     override func viewDidLoad() {
         setUpCollectionView()
+        setBackButton()
     }
     
+    fileprivate func setBackButton() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "close"), style: .plain, target: self, action: #selector(popBack))
+    }
     
+    @objc func popBack() {
+        dismiss(animated: true)
+    }
+        
     //MARK: CollectionView
     fileprivate func setUpCollectionView() {
         
@@ -39,6 +47,7 @@ class LogoGallery: UIViewController {
         logoGalley.dataSource = self
         logoGalley.register(UINib.init(nibName: "LogoCell", bundle: nil), forCellWithReuseIdentifier: "logoCell")
         logoGalley.backgroundColor = UIColor.groupTableViewBackground
+        logoGalley.contentInset = UIEdgeInsets(top: 5, left: 10, bottom: 64, right: 10)
         view.addSubview(logoGalley)
         
     }
@@ -58,6 +67,6 @@ extension LogoGallery: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.delegate?.collectionView?(collectionView, didSelectItemAt: indexPath, logo: datas[indexPath.row])
-        dismiss(animated: true)
+        navigationController?.popViewController(animated: true)
     }
 }

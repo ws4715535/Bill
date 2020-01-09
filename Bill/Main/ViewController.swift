@@ -13,18 +13,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     lazy var rows: [UITableViewCell] = [
         buildCell(name: "微信支付"),
-        buildCell(name: "支付宝支付"),
+        buildCell(name: "支付宝支付(个人转账)"),
+        buildCell(name: "支付宝支付(淘宝购物)"),
+        buildCell(name: "支付宝支付(商家)"),
     ]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUpTableView()
+    }
+    
+    private func setUpTableView() {
         let tableView = UITableView(frame: view.bounds, style: .plain)
         view.addSubview(tableView)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     //MARK: TableView Delegate & Datasource
@@ -40,10 +46,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.row {
         case 0:
-            let wechat = WechatViewController.initWithStoryBoard(name: "WechatViewController")
+            let wechat = WechatViewController.initStoryBoardWithInitialController(name: "WechatViewController")
             navigationController?.pushViewController(wechat, animated: true)
-        case 1:
-            let aliPay = AlipayViewController.initWithStoryBoard(name: "AlipayViewController")
+        case 1,2,3:
+            let aliPay = AlipayViewController.initStoryBoardWithInitialController(name: "AlipayViewController")
             navigationController?.pushViewController(aliPay, animated: true)
         default:
             return
