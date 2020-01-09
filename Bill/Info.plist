@@ -43,5 +43,9 @@
 	<string>使用您的系统相机</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>访问您的系统相册</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PTMono.ttc</string>
+	</array>
 </dict>
 </plist>
