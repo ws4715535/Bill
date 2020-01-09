@@ -16,3 +16,18 @@ extension UIViewController {
         return sb.instantiateInitialViewController()!
     }
 }
+
+/// ImageManager
+class ImageManager {
+        
+    class func loadLogos() -> [UIImage] {
+        var imgs = [UIImage]()
+        for i in 0...9 {
+            if let logo = UIImage(named: "logo\(i)")  {
+                imgs.append(logo)
+            }
+        }
+        return imgs
+    }
+        
+}
