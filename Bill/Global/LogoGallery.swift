@@ -67,6 +67,6 @@ extension LogoGallery: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.delegate?.collectionView?(collectionView, didSelectItemAt: indexPath, logo: datas[indexPath.row])
-        navigationController?.popViewController(animated: true)
+        dismiss(animated: true)
     }
 }
