@@ -92,7 +92,7 @@ class WechatViewController: UIViewController {
             self.present(picker, animated: true, completion: nil)
         }
         
-        let fantasy = UIAlertAction(title: "🚀", style: .default) { (action) in
+        let fantasy = UIAlertAction(title: "🚀🚀🚀🚀", style: .default) { (action) in
             let logoGallery = LogoGallery()
             logoGallery.delegate = self
             let navi = UINavigationController(rootViewController: logoGallery)
