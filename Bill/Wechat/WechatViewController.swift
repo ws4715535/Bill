@@ -15,18 +15,28 @@ class WechatViewController: UIViewController {
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var tradeNumber: UITextField!
     @IBOutlet weak var businessNumber: UITextField!
+    @IBOutlet weak var time: UITextField!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         initLogo()
         avoidKeyBoard()
         setBackButton()
         changeLogo()
+        setDatePicker()
     }
+    
+    private func setDatePicker() {
+        
+        let picker = BillDatePicker()
+        picker.delegate = self
+        time.inputView = picker
+        
+    }
+    
     private func initLogo() {
         logo.isUserInteractionEnabled = true
         logo.layer.cornerRadius = 31
-        logo.clipsToBounds = true        
+        logo.clipsToBounds = true
     }
     
     private func setBackButton() {
@@ -103,4 +113,13 @@ extension WechatViewController: GalleryDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath, logo: UIImage) {
         self.logo.image = logo
     }
+}
+
+
+extension WechatViewController: BillPickerDelegate {
+    
+    func didFinishPickeDate(picker: BillDatePicker, date: String) {
+        time.text = date
+    }
+    
 }
