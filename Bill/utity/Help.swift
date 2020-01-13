@@ -40,3 +40,27 @@ class ImageManager {
     }
         
 }
+
+class BillDateFormatter {
+    
+    public enum Model: String {
+        
+        
+        case dateAndTime = "YYYY-MM-DD HH:mm:ss"
+        
+        case date  = "YYYY-MM-DD"
+        
+        case time = "HH:mm:ss"
+            
+    }
+    
+    public class func formatDate(date: Date, model: Model) -> String {
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = model.rawValue
+        let dateString = formatter.string(from: date)
+        return dateString
+        
+    }
+    
+}
