@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haidilao" translatesAutoresizingMaskIntoConstraints="NO" id="hbv-T5-U8M">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haidilao" translatesAutoresizingMaskIntoConstraints="NO" id="hbv-T5-U8M">
                                 <rect key="frame" x="176.66666666666666" y="68" width="61" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="O5W-RO-pl9"/>
